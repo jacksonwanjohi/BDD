@@ -1,0 +1,196 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5562042200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "StepDefinition.User_is_on_the_Techfios_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6056834900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Login to Techfios as a valid user and be able to create new bank account",
+        "description": "",
+        "id": "validate-login;login-to-techfios-as-a-valid-user-and-be-able-to-create-new-bank-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1122854300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1239162700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"demo@techfios.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 13
+                },
+                {
+                  "val": "abc123",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5383788200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 470278900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "StepDefinition.User_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 163948500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on bank and cash",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_bank_and_cash()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6221596900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on new account",
+            "match": {
+              "location": "StepDefinition.User_clicks_on_new_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7981713400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User fill up the form entering \"CucumberHW\"and \"Checking\"and \"$40,000\"and \"29856473\"and \"Bond\"and \"323476565\"and \"www.bankofamerica.com\" and clicks on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CucumberHW",
+                  "offset": 32
+                },
+                {
+                  "val": "Checking",
+                  "offset": 48
+                },
+                {
+                  "val": "$40,000",
+                  "offset": 62
+                },
+                {
+                  "val": "29856473",
+                  "offset": 75
+                },
+                {
+                  "val": "Bond",
+                  "offset": 89
+                },
+                {
+                  "val": "323476565",
+                  "offset": 99
+                },
+                {
+                  "val": "www.bankofamerica.com",
+                  "offset": 114
+                }
+              ],
+              "location": "StepDefinition.user_fill_up_the_form_entering_and_and_and_and_and_and_and_clicks_on_submit(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@NewUserBankAccount"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Login",
+    "description": "",
+    "id": "validate-login",
+    "keyword": "Feature",
+    "uri": "features/OtherLogin.feature"
+  }
+]
